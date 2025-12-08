@@ -67,7 +67,7 @@ require '../DB/conexao.php';
                                 ?>
                             </tbody>
                         </table>
-                        <a href="../index.php" class="btn btn-danger float-start">Voltar</a>
+                        <a href="../INICIO/index-inicio.php" class="btn btn-danger float-start">Voltar</a>
                     </div>
                 </div>
             </div>
