@@ -1,12 +1,4 @@
-:root {
-    --primary-color: #0d6efd;
-    --success-color: #198754;
-    --secondary-color: #6c757d;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url(style.css);
 
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--success-color) 100%);
