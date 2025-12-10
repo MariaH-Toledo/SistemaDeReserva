@@ -1,0 +1,147 @@
+@import url(style.css);
+@import url(index-inicio.css);
+
+.content-section {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #f0f0f0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212529;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-badge {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.custom-table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.custom-table thead {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  color: white;
+}
+
+.custom-table thead th {
+  border: none;
+  padding: 18px 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.custom-table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.custom-table tbody td {
+  padding: 18px 15px;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.custom-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.id-badge {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.action-btn-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.action-btn-group .btn {
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.action-btn-group .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.empty-state i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 20px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .custom-table {
+    font-size: 0.85rem;
+  }
+  
+  .action-btn-group {
+    flex-direction: column;
+  }
+  
+  .action-btn-group .btn {
+    width: 100%;
+  }
+}
