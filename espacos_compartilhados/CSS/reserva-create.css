@@ -221,3 +221,68 @@
     font-size: 0.85rem;
   }
 }
+
+@media (max-width: 576px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row > .col-lg-6:first-child {
+    order: 2;
+  }
+  
+  .row > .col-lg-6:last-child {
+    order: 1;
+  }
+  
+  .form-section,
+  .info-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .table-responsive {
+    font-size: 0.85rem;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 0.5rem 0.3rem;
+    white-space: nowrap;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .page-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .form-title,
+  .info-section-title {
+    font-size: 1.2rem;
+  }
+  
+  .btn-submit,
+  .btn-custom {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-custom {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .custom-table {
+    font-size: 0.75rem;
+  }
+  
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
